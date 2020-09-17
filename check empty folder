@@ -1,0 +1,5 @@
+1. return all folders and subfolders. If no subfolders returned, then it's empty!
+
+PS D:\CleanedData\2-SCTHigh> Get-ChildItem 'D:\CleanedData' -Recurse | Where { $_.PsIsContainer -eq $true
+}
+>> $share | Where { $_.GetFiles().Count -eq 0 -and $_.GetDirectories().Count -eq 0 }
